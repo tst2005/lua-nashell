@@ -13,6 +13,6 @@ print(S.pwd()==os.getenv("HOME"))
 S.cd("/tmp")
 print(S.pwd()=="/tmp")
 
-for k,v in pairs(S.ls("*")or{}) do
-	print(k,v)
+for i,item in ipairs(S.ls("*")or{}) do
+	print(i,item)
 end
